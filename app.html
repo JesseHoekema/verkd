@@ -1,4 +1,12 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Counter Page</title>
+    <!-- Voeg de modulaire Firebase SDK toe -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js';
         import { getFirestore, doc, getDoc, setDoc } from 'https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore.js';
         
         // Configuratie van Firebase
@@ -31,3 +39,8 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.1.0/firebase
         }).catch(error => {
             console.error('Error updating counter:', error);
         });
+    </script>
+</head>
+<body>
+</body>
+</html>
